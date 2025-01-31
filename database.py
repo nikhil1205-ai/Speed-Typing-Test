@@ -6,10 +6,10 @@ from datetime import datetime
 current_datetime = datetime.now()
 formatted_datetime = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("fir-nik-3c5c6-firebase-adminsdk-fbsvc-3e2bdebf87.json")
 
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://speed-typing-test-shashi-singh-default-rtdb.firebaseio.com/"  # For Realtime Database 
+    'databaseURL': "https://fir-nik-3c5c6-default-rtdb.firebaseio.com/"  # For Realtime Database 
 })
 
 ref = db.reference("test")
